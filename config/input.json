@@ -1,0 +1,25 @@
+{
+  "usernames_source": "database",
+  "lookback_days_first_run": 1,
+  "profile_refresh_days": 7,
+  "max_pages_per_user_per_run": 10,
+  "max_consecutive_failures": 10,
+  "run_time_limit_minutes": 50,
+  "scheduler_kill_after_minutes": 55,
+  "schedule_interval_minutes": 60,
+  "schedule_run_on_start": true,
+  "outputs": {
+    "sqlite": true,
+    "postgres": false,
+    "json": true,
+    "pipeline": true
+  },
+  "sqlite_path": "data/x_monitor.db",
+  "json_dir": "data/json",
+  "log_dir": "logs",
+  "log_max_mb": 50,
+  "log_backups": 5,
+  "scheduler_log_max_mb": 10,
+  "scheduler_log_backups": 5,
+  "low_credit_warning_usd": 2.0
+}
